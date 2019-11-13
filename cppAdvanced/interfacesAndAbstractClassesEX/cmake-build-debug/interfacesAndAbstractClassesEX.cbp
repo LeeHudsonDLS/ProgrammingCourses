@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="interfacesAndAbstractClassesEX"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="interfacesAndAbstractClassesEX">
+				<Option output="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/interfacesAndAbstractClassesEX" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 interfacesAndAbstractClassesEX"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="interfacesAndAbstractClassesEX/fast">
+				<Option output="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/interfacesAndAbstractClassesEX" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 interfacesAndAbstractClassesEX/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/Doubles.cpp">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/Doubles.h">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/FiveASideTeam.cpp">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/FiveASideTeam.h">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/Groupings.cpp">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/Groupings.h">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/Singles.cpp">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/Singles.h">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/main.cpp">
+			<Option target="interfacesAndAbstractClassesEX"/>
+		</Unit>
+		<Unit filename="/home/jjc62351/ProgrammingCourses/cppAdvanced/interfacesAndAbstractClassesEX/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

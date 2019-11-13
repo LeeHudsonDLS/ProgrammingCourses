@@ -1,0 +1,16 @@
+# Individual motor control
+
+file ../asynMotor.template
+{
+   pattern {	P,    	M,      DESC,  	DTYP,  	C,    S,    	PORT, 
+	    	ADDR, 	DIR,    VELO,  	VMAX, 	VBAS, ACCL, 	MRES,      
+	    	ERES,	PREC,  	EGU,   	DHLM, 	DLLM, HLSV, 	OFF,  
+		INIT, 	SREV,  	RRES, 	TWV,	BDST,     	BVEL,   
+		BACC, 	JVEL,  	JAR,  	UEIP, 	RDBD, 		FOFF, user }
+
+           {motorTest, :axis1,	"Axis 1", 	asynMotor, 	1, 	1, 	PMAC1,
+	    1, 		Pos, 	4, 		4, 		0, 	0.1, 	0.001,
+	    0.0001, 	3,	"mm",		1000,		1000,	MAJOR,	0,	
+            0,		10000,	0,		0.1,		0,		0,
+	    0,		0,	0,		0,		0.1,		0, jjc62351:}
+}

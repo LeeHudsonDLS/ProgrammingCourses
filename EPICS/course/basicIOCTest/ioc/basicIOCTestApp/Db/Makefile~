@@ -1,0 +1,21 @@
+TOP=../..
+include $(TOP)/configure/CONFIG
+
+#DB += test.db
+#DB += disPTest.db
+#DB += mbboTest.db
+DB += BL04JFS.db
+#DB += Air.db
+#DB += binaryIOFlat.db
+#DB += exercise2.db
+#DB += exercise3.db
+#DB += exercise4Flat.db
+#DB += exercise4aFlat.db
+#DB += exercise5.db
+#DB += exercise6.db
+#DB += exercise7.db
+#DB += exercise8.db
+
+include $(TOP)/configure/RULES
+#----------------------------------------
+#  ADD RULES AFTER THIS LINE

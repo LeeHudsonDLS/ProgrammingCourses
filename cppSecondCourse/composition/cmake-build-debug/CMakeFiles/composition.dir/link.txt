@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/composition.dir/main.cpp.o CMakeFiles/composition.dir/Point.cpp.o CMakeFiles/composition.dir/Rectangle.cpp.o  -o composition 

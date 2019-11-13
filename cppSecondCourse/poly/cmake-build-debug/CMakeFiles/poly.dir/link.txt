@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/poly.dir/main.cpp.o  -o poly 

@@ -1,0 +1,79 @@
+#% macro, P      , Device Prefix
+#% macro, M      , Device Suffix
+#% macro, PORT   , Asyn port for motor record
+#% macro, ADDR   , Address on controller
+#% macro, DESC   , Description, displayed on EDM screen
+#% macro, MRES   , Motor Step Size (EGU)
+#% macro, DTYP   , DTYP of record
+#% macro, DIR    , User Direction
+#% macro, VBAS   , Base Velocity (EGU/s)
+#% macro, VELO   , Velocity (EGU/s)
+#% macro, VMAX   , Max Velocity (EGU/s), defaults to VELO
+#% macro, ACCL   , Seconds to Velocity
+#% macro, BDST   , BL Distance (EGU)
+#% macro, BVEL   , BL Velocity (EGU/s)
+#% macro, BACC   , BL Seconds to Veloc.
+#% macro, PREC   , Display Precision
+#% macro, EGU    , Engineering Units
+#% macro, DHLM   , Dial High Limit
+#% macro, DLLM   , Dial Low Limit
+#% macro, HLM    , User High Limit
+#% macro, LLM    , User Low Limit
+#% macro, HLSV   , HW Lim. Violation Svr
+#% macro, INIT   , Startup commands
+#% macro, SREV   , Steps per Revolution
+#% macro, RRES   , Readback Step Size (EGU)
+#% macro, TWV    , Tweak Step Size (EGU)
+#% macro, ERES   , Encoder Step Size (EGU)
+#% macro, JAR    , Jog Acceleration (EGU/s^2)
+#% macro, UEIP   , Use Encoder If Present
+#% macro, URIP   , Use RDBL If Present
+#% macro, RDBL   , Readback Location, set URIP = 1 if you specify this
+#% macro, RTRY   , Max retry count
+#% macro, DLY    , Readback settle time (s)
+#% macro, OFF    , User Offset (EGU)
+#% macro, RDBD   , Retry Deadband (EGU)
+#% macro, FOFF   , Freeze Offset, 0=variable, 1=frozen
+#% macro, ADEL   , Alarm monitor deadband (EGU)
+#% macro, NTM    , New Target Monitor, only set to 0 for soft motors
+
+record(motor,"$(user)$(P)$(M)")
+{
+	field(DESC,"$(DESC)")
+	field(DTYP,"$(DTYP=asynMotor)")
+	field(DIR,"$(DIR=0)")
+	field(VELO,"$(VELO)")
+	field(VBAS,"$(VBAS=0)")
+	field(ACCL,"$(ACCL=0.5)")
+	field(BDST,"$(BDST=0)")
+	field(BVEL,"$(BVEL=0)")
+	field(BACC,"$(BACC=)")
+	field(OUT,"@asyn($(PORT),$(ADDR))")
+	field(MRES,"$(MRES)")
+	field(PREC,"$(PREC)")
+	field(EGU,"$(EGU)")
+	field(DHLM,"$(DHLM=)")
+	field(DLLM,"$(DLLM=)")
+	field(HLM,"$(HLM=)")
+	field(LLM,"$(LLM=)")	
+	field(HLSV,"$(HLSV=MAJOR)")
+	field(INIT,"$(INIT=)")
+	field(RTRY,"$(RTRY=0)")
+	field(DLY,"$(DLY=0)")	
+	field(HVEL,"0")
+	field(SREV, "$(SREV=1000)")
+	field(RRES, "$(RRES=)")
+	field(TWV, "$(TWV)")
+	field(ERES, "$(ERES=)")
+	field(JVEL, "$(VELO)")
+	field(JAR, "$(JAR=)")
+	field(UEIP, "$(UEIP=0)")
+	field(URIP, "$(URIP=0)")	
+	field(RDBL, "$(RDBL=)")		
+	field(VMAX, "$(VMAX=$(VELO))")
+	field(OFF, "$(OFF=0)")
+	field(RDBD, "$(RDBD=)")
+	field(FOFF, "$(FOFF=0)")
+	field(ADEL, "$(ADEL=0)")
+	field(NTM, "$(NTM=1)")
+}

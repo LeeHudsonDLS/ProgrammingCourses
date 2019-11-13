@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/accounts/BankAccount.h
+string
+-
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/accounts/CreditAccount.cpp
+CreditAccount.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/accounts/CreditAccount.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/accounts/CreditAccount.h
+BankAccount.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/accounts/BankAccount.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/accounts/main.cpp
+iostream
+-
+vector
+-
+string
+-
+fstream
+-
+string
+-
+stdio.h
+-
+map
+-
+CreditAccount.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/accounts/CreditAccount.h
+

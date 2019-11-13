@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(void)
+{
+
+	int x;
+	int* px = &x;
+	int** q = &px;
+	printf("Enter a number:");
+	//scanf("%i", &x);
+	scanf("%i", *q);
+	printf("You typed : %i\n",x);
+	return 0;
+}

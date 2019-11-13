@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/League.cpp
+League.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/League.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/League.h
+vector
+-
+Team.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/Team.h
+string
+-
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/Team.cpp
+Team.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/Team.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/Team.h
+string
+-
+iostream
+-
+League.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/League.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/main.cpp
+iostream
+-
+Team.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/teams/Team.h
+

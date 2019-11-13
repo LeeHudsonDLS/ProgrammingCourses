@@ -1,0 +1,87 @@
+# Individual motor control
+
+
+
+
+
+
+#% macro, P      , Device Prefix
+#% macro, M      , Device Suffix
+#% macro, PORT   , Asyn port for motor record
+#% macro, ADDR   , Address on controller
+#% macro, DESC   , Description, displayed on EDM screen
+#% macro, MRES   , Motor Step Size (EGU)
+#% macro, DTYP   , DTYP of record
+#% macro, DIR    , User Direction
+#% macro, VBAS   , Base Velocity (EGU/s)
+#% macro, VELO   , Velocity (EGU/s)
+#% macro, VMAX   , Max Velocity (EGU/s), defaults to VELO
+#% macro, ACCL   , Seconds to Velocity
+#% macro, BDST   , BL Distance (EGU)
+#% macro, BVEL   , BL Velocity (EGU/s)
+#% macro, BACC   , BL Seconds to Veloc.
+#% macro, PREC   , Display Precision
+#% macro, EGU    , Engineering Units
+#% macro, DHLM   , Dial High Limit
+#% macro, DLLM   , Dial Low Limit
+#% macro, HLM    , User High Limit
+#% macro, LLM    , User Low Limit
+#% macro, HLSV   , HW Lim. Violation Svr
+#% macro, INIT   , Startup commands
+#% macro, SREV   , Steps per Revolution
+#% macro, RRES   , Readback Step Size (EGU)
+#% macro, TWV    , Tweak Step Size (EGU)
+#% macro, ERES   , Encoder Step Size (EGU)
+#% macro, JAR    , Jog Acceleration (EGU/s^2)
+#% macro, UEIP   , Use Encoder If Present
+#% macro, URIP   , Use RDBL If Present
+#% macro, RDBL   , Readback Location, set URIP = 1 if you specify this
+#% macro, RTRY   , Max retry count
+#% macro, DLY    , Readback settle time (s)
+#% macro, OFF    , User Offset (EGU)
+#% macro, RDBD   , Retry Deadband (EGU)
+#% macro, FOFF   , Freeze Offset, 0=variable, 1=frozen
+#% macro, ADEL   , Alarm monitor deadband (EGU)
+#% macro, NTM    , New Target Monitor, only set to 0 for soft motors
+
+record(motor,"jjc62351:motorTest:axis1")
+{
+	field(DESC,"Axis 1")
+	field(DTYP,"asynMotor")
+	field(DIR,"Pos")
+	field(VELO,"4")
+	field(VBAS,"0")
+	field(ACCL,"0.1")
+	field(BDST,"0")
+	field(BVEL,"0")
+	field(BACC,"0")
+	field(OUT,"@asyn(PMAC1,1)")
+	field(MRES,"0.001")
+	field(PREC,"3")
+	field(EGU,"mm")
+	field(DHLM,"1000")
+	field(DLLM,"1000")
+	field(HLM,"")
+	field(LLM,"")	
+	field(HLSV,"MAJOR")
+	field(INIT,"0")
+	field(RTRY,"0")
+	field(DLY,"0")	
+	field(HVEL,"0")
+	field(SREV, "10000")
+	field(RRES, "0")
+	field(TWV, "0.1")
+	field(ERES, "0.0001")
+	field(JVEL, "4")
+	field(JAR, "0")
+	field(UEIP, "0")
+	field(URIP, "0")	
+	field(RDBL, "")		
+	field(VMAX, "4")
+	field(OFF, "0")
+	field(RDBD, "0.1")
+	field(FOFF, "0")
+	field(ADEL, "0")
+	field(NTM, "1")
+}
+

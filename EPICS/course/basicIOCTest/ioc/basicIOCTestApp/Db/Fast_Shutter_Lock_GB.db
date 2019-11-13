@@ -1,0 +1,79 @@
+# Fast shutter interlock
+# Lee Hudson	
+#
+# This database takes a value from a PMAC that dictates whether or not the Beamstop or 
+# Scintillator is protecting the detector from direct beam. If there is no protection
+# from direct beam the fast shutter is forced closed. If there is protection this database
+# must not have any influence on the shutter, ie, it must not write to it.
+#
+# From PMAC:
+#	P1306 = 0 	Detector is exposed, force shutter closed
+#	P1306 = 1	Detector is protected, allow normal control of the shutter
+#
+
+record(ai, "BL04J-EA-SHTR-01:REQ_LOCK_STATE")
+{
+  field(DESC, "Beam blocked from pmac")
+  field(DTYP, "stream")
+  field(SCAN, ".2 second")
+  field(INP,  "@pmacCoord.proto getVar(P1306) BRICK_1")
+  field(FLNK, "BL04J-EA-SHTR-01:LOCK_INVERT")
+}
+
+record(calcout, "BL04J-EA-SHTR-01:LOCK_INVERT") {
+  field(FLNK, "BL04J-EA-SHTR-01:LOCK_INVERT_DISPLAY")
+  field(CALC, "(A>1)?1:!A")
+  field(INPA, "BL04J-EA-SHTR-01:REQ_LOCK_STATE")
+}
+
+record(calcout, "BL04J-EA-SHTR-01:LOCK_INVERT_DISPLAY") {
+  field(FLNK, "BL04J-EA-SHTR-01:LOCK")
+  field(CALC, "!A")
+  field(INPA, "BL04J-EA-SHTR-01:LOCK_INVERT")
+}
+
+record(calcout, "BL04J-EA-SHTR-01:LOCK") {
+  field(CALC, "A")
+  field(INPA, "BL04J-EA-SHTR-01:LOCK_INVERT")
+  field(OUT, "BL04J-EA-SHTR-01:LOCK:FAN PP")
+  field(OOPT, "When Non-zero")
+  field(FLNK, "BL04J-EA-SHTR-01:LOCKED_CALC")
+}
+
+record(mbbo, "BL04J-EA-SHTR-01:OVERRIDE_SHUTTER_LOCK") {
+  field(DTYP, "Soft Channel")
+  field(OUT, "BL04J-EA-SHTR-01:LOCK.DISA")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(ZRST, "Operational")
+  field(ONST, "Overridden")
+  field(FLNK, "BL04J-EA-SHTR-01:LOCKED_CALC")
+}
+
+record(calcout, "BL04J-EA-SHTR-01:LOCKED_CALC") {
+  field(CALC, "(B>0)?0:A")
+  field(INPA, "BL04J-EA-SHTR-01:LOCK PP")
+  field(INPB, "BL04J-EA-SHTR-01:OVERRIDE_SHUTTER_LOCK.RVAL PP")
+}
+
+record(dfanout, "BL04J-EA-SHTR-01:LOCK:FAN") {
+  field(OUTA, "BL04J-EA-SHTR-01:COMP1:CTRL PP")
+  field(OUTB, "BL04J-EA-SHTR-01:COMP2:CTRL PP")
+  field(OUTC, "BL04J-EA-SHTR-01:COMP3:CTRL PP")
+}
+
+record(ai, "BL04J-MO-MD2-01:BS_IN_BEAM")
+{
+  field(DESC, "Beamstop in Beam")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP, "@pmacCoord.proto getVar(P1303) BRICK_1")
+}
+
+record(ai, "BL04J-MO-MD2-01:SCIN_IN_BEAM")
+{
+  field(DESC, "Plate Interlock Check")
+  field(DTYP, "stream")
+  field(SCAN, "1 second")
+  field(INP, "@pmacCoord.proto getVar(P1305) BRICK_1")
+}

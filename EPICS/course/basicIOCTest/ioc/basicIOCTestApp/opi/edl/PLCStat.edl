@@ -1,0 +1,204 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 648
+y 104
+w 500
+h 600
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 89
+y 78
+w 116
+h 27
+controlPv "$(user)-PLC-STAT-DIFF.A"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 85
+y 157
+w 116
+h 27
+controlPv "$(user)-PLC-STAT-DIFF.B"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 79
+w 193
+h 24
+controlPv "$(user)-PLC-STAT-DIFF.A"
+lineColor index 14
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 157
+w 193
+h 24
+controlPv "$(user)-PLC-STAT-DIFF.B"
+lineColor index 14
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 81
+w 13
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "A"
+}
+autoSize
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 159
+w 12
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "B"
+}
+autoSize
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 225
+w 86
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Difference"
+}
+autoSize
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 19
+y 296
+w 60
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Same?"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 234
+w 193
+h 24
+controlPv "$(user)-PLC-STAT-DIFF"
+lineColor index 14
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 148
+y 297
+w 49
+h 24
+controlPv "jjc62351-PLC-STAT-RESULT"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+

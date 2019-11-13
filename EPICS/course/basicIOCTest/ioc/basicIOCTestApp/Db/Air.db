@@ -1,0 +1,24 @@
+record(ai, "$(prefix)$(suffix):GONIO_PLIM")
+{
+  field(DESC, "Plim status from PMAC")
+  field(SCAN, ".2 second")
+  field(FLNK, "$(prefix)$(suffix):GONIO_NLIM")
+}
+
+# % macro, prefix, prefix for template PVs
+# % macro, suffix, suffix for template PVs
+# % macro, nlim, mvariable for nlim
+# % macro, pmac, mvariable for plim
+
+record(ai, "$(prefix)$(suffix):GONIO_NLIM")
+{
+  field(DESC, "Nlim status from PMAC")
+  field(FLNK, "$(prefix)$(suffix):AIR_INTERLOCK")
+}
+
+
+record(calc, "$(prefix)$(suffix):AIR_INTERLOCK") {
+  field(CALC, "((A+B)=2)?1:0")
+  field(INPA, "$(prefix)$(suffix):GONIO_PLIM")
+  field(INPB, "$(prefix)$(suffix):GONIO_NLIM")
+}

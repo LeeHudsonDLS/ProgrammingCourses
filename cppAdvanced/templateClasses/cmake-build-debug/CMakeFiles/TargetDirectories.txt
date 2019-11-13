@@ -1,0 +1,3 @@
+/home/jjc62351/ProgrammingCourses/cppAdvanced/templateClasses/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jjc62351/ProgrammingCourses/cppAdvanced/templateClasses/cmake-build-debug/CMakeFiles/templateClasses.dir
+/home/jjc62351/ProgrammingCourses/cppAdvanced/templateClasses/cmake-build-debug/CMakeFiles/edit_cache.dir

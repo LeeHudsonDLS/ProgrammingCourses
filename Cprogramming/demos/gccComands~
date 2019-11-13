@@ -1,0 +1,2 @@
+gcc 	-g 	-O0 	-I dirs		-l libs				-L dirs		*.c
+	debug s	opt	includes	libraries (libx.a, just use x	lib directs	inputs

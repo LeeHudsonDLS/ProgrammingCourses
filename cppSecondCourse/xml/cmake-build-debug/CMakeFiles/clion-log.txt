@@ -1,0 +1,8 @@
+/dls_sw/prod/tools/RHEL7-x86_64/clion/2019-2/src/clion-2019.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jjc62351/ProgrammingCourses/cppSecondCourse/xml
+CMake Error at CMakeLists.txt:6 (target_link_libraries):
+  Cannot specify link libraries for target "xml" which is not built by this
+  project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/jjc62351/ProgrammingCourses/cppSecondCourse/xml/cmake-build-debug/CMakeFiles/CMakeOutput.log".

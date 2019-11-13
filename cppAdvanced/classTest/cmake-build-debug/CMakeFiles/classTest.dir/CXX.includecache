@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/Controller.h
+iostream
+-
+string
+-
+
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/SpecialController.h
+string
+-
+iostream
+-
+Controller.h
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/Controller.h
+UtilityClass.h
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/UtilityClass.h
+
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/UtilityClass.cpp
+UtilityClass.h
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/UtilityClass.h
+SpecialController.h
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/SpecialController.h
+
+/home/jjc62351/ProgrammingCourses/cppAdvanced/classTest/UtilityClass.h
+

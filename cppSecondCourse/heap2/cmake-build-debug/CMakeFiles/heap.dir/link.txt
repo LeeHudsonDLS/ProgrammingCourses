@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/heap.dir/main.cpp.o CMakeFiles/heap.dir/Time.cpp.o CMakeFiles/heap.dir/Smart.cpp.o  -o heap 

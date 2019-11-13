@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/sharedPointers.dir/main.cpp.o  -o sharedPointers 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/interfacesAndAbstractClassesEX.dir/main.cpp.o CMakeFiles/interfacesAndAbstractClassesEX.dir/Groupings.cpp.o CMakeFiles/interfacesAndAbstractClassesEX.dir/Singles.cpp.o CMakeFiles/interfacesAndAbstractClassesEX.dir/Doubles.cpp.o CMakeFiles/interfacesAndAbstractClassesEX.dir/FiveASideTeam.cpp.o  -o interfacesAndAbstractClassesEX 

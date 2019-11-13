@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/matrixEx1/Matrix.cpp
+Matrix.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/matrixEx1/Matrix.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/matrixEx1/Matrix.h
+vector
+-
+iostream
+-
+

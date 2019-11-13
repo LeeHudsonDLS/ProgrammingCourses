@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int f4(void)
+{
+	printf("This is f4\n");
+	return 0;
+}

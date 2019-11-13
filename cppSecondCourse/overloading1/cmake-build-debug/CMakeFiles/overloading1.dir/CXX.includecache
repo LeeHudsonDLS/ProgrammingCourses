@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/overloading1/Time.cpp
+Time.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/overloading1/Time.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/overloading1/Time.h
+iostream
+-
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/overloading1/main.cpp
+iostream
+-
+Time.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/overloading1/Time.h
+

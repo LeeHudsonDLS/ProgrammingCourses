@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int f2(void)
+{
+	printf("This is f2\n");
+	return 0;
+}

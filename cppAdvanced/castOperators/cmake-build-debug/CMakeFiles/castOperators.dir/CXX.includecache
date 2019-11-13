@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppAdvanced/castOperators/Time.cpp
+Time.h
+/home/jjc62351/ProgrammingCourses/cppAdvanced/castOperators/Time.h
+
+/home/jjc62351/ProgrammingCourses/cppAdvanced/castOperators/Time.h
+iostream
+-
+
+/home/jjc62351/ProgrammingCourses/cppAdvanced/castOperators/main.cpp
+iostream
+-
+Time.h
+/home/jjc62351/ProgrammingCourses/cppAdvanced/castOperators/Time.h
+

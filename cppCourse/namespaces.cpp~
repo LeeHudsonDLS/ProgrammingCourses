@@ -1,0 +1,28 @@
+namespace abc
+{
+
+	void f(){std::cout << "f abc" << std::endl;}
+	void g(){std::cout << "g abc" << std::endl;}
+
+
+}
+
+namespace xyz
+{
+
+	void f(){std::cout << "f xyz" << std::endl;}
+	void h(){std::cout << "h xyz" << std::endl;}
+
+}
+
+
+int main()
+{
+
+	abc::f();
+	abc::g();
+	xyz::f();
+	xyz::h();
+	
+
+}

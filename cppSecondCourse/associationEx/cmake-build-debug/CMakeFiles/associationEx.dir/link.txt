@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/associationEx.dir/main.cpp.o CMakeFiles/associationEx.dir/League.cpp.o CMakeFiles/associationEx.dir/Team.cpp.o  -o associationEx 

@@ -1,0 +1,29 @@
+
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#define MASK_LEN	16
+
+
+
+int main() 
+{
+    
+    int i;
+    int result[80];
+    for(i = 0; i < 80; i=i+5){
+        if(i==0){
+            result[1]=1/5;
+            printf("result[%d] = %d\n",1,result[1]);
+        }else{
+            result[i]=i/5;        
+            printf("result[%d] = %d\n",i,result[i]);
+        }
+    }    
+    printf("%s\n","Here!");
+	return 0;
+}
+
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/accounts.dir/main.cpp.o CMakeFiles/accounts.dir/BankAccount.cpp.o CMakeFiles/accounts.dir/CreditAccount.cpp.o CMakeFiles/accounts.dir/SavingsAccount.cpp.o  -o accounts 

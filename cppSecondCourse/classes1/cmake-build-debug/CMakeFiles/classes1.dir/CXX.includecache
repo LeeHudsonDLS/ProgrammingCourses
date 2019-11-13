@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/classes1/Point.cpp
+Point.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/classes1/Point.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/classes1/Point.h
+iostream
+-
+string
+-
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/classes1/main.cpp
+iostream
+-
+string
+-
+Point.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/classes1/Point.h
+

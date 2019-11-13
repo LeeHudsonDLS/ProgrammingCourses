@@ -1,0 +1,12 @@
+record(calcout, "$(user)-PLC-STAT-DIFF") {
+  field(SCAN, ".1 second")
+  field(CALC, "A XOR B")
+  field(A,"239")
+}
+
+record(calcout, "$(user)-PLC-STAT-RESULT") {
+  field(SCAN, ".1 second")
+  field(CALC, "A AND B?1:0")
+  field(INPA,"$(user)-PLC-STAT-DIFF.A")
+  field(INPB,"$(user)-PLC-STAT-DIFF.B")
+}

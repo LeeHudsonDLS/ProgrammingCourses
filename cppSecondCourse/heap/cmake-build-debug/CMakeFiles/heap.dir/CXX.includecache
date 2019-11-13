@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/Smart.cpp
+Smart.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/Smart.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/Smart.h
+Time.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/Time.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/Time.h
+iostream
+-
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/main.cpp
+iostream
+-
+string
+-
+Time.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/Time.h
+Smart.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/heap/Smart.h
+

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Point.cpp
+iostream
+-
+Point.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Point.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Point.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Rectangle.cpp
+Rectangle.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Rectangle.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Rectangle.h
+Point.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Point.h
+
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/main.cpp
+iostream
+-
+Rectangle.h
+/home/jjc62351/ProgrammingCourses/cppSecondCourse/composition/Rectangle.h
+

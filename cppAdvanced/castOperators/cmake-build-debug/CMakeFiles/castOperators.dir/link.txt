@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/castOperators.dir/main.cpp.o CMakeFiles/castOperators.dir/Time.cpp.o  -o castOperators 

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export EDMDATAFILES=".:data"
+edm -x -m "user=ajf67" exercise1.edl
